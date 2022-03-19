@@ -32,6 +32,9 @@ class GameViewModel: GameViewModelProtocol {
     var gameFinishedSubject = PassthroughSubject<Void, Never>()
     var errorSubject = PassthroughSubject<Error, Never>()
     var isLoadingSubject = PassthroughSubject<Bool, Never>()
+    var timeOutDuration: TimeInterval {
+        return gameSettings.timeOutDuration
+    }
     
     // MARK: Init
     required init(dataService: DataServiceProtocol, gameSettings: GameSettingsProtocol) {

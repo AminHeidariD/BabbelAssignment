@@ -131,7 +131,7 @@ extension GameViewController {
         translatedWordLabel.layer.removeAllAnimations()
         translatedWordLabel.transform = CGAffineTransform.identity
         view.layoutIfNeeded()
-        translatedWordAnimator = UIViewPropertyAnimator(duration: 5.0, curve: .linear) { [weak self] in
+        translatedWordAnimator = UIViewPropertyAnimator(duration: viewModel.timeOutDuration, curve: .linear) { [weak self] in
             self?.translatedWordLabel.transform = CGAffineTransform(translationX: 0, y: self?.translatedWordContainerView.frame.height ?? 0)
         }
         

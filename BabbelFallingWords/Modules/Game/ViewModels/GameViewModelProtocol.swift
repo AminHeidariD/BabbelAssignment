@@ -14,6 +14,7 @@ protocol GameViewModelProtocol {
     var viewDidLoadSubject: PassthroughSubject<Void, Never> { get }
     var answerActionSubject: PassthroughSubject<AnswerAction, Never> { get }
     // MARK: Outputs
+    var timeOutDuration: TimeInterval { get }
     var questionSubject: PassthroughSubject<WordViewModel, Never> { get }
     var userScoreUpdatedSubject: CurrentValueSubject<UserScore, Never> { get }
     var gameFinishedSubject: PassthroughSubject<Void, Never> { get }
