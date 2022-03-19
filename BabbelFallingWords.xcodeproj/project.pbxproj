@@ -14,19 +14,10 @@
 		475BEB6627E587C0005CB334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB6527E587C0005CB334 /* Assets.xcassets */; };
 		475BEB6927E587C0005CB334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB6727E587C0005CB334 /* LaunchScreen.storyboard */; };
 		475BEB7427E587C0005CB334 /* BabbelFallingWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB7327E587C0005CB334 /* BabbelFallingWordsTests.swift */; };
-		475BEB7E27E587C0005CB334 /* BabbelFallingWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB7D27E587C0005CB334 /* BabbelFallingWordsUITests.swift */; };
-		475BEB8027E587C0005CB334 /* BabbelFallingWordsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB7F27E587C0005CB334 /* BabbelFallingWordsUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		475BEB7027E587C0005CB334 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 475BEB5127E587BE005CB334 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 475BEB5827E587BE005CB334;
-			remoteInfo = BabbelFallingWords;
-		};
-		475BEB7A27E587C0005CB334 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 475BEB5127E587BE005CB334 /* Project object */;
 			proxyType = 1;
@@ -46,9 +37,6 @@
 		475BEB6A27E587C0005CB334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		475BEB6F27E587C0005CB334 /* BabbelFallingWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabbelFallingWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		475BEB7327E587C0005CB334 /* BabbelFallingWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabbelFallingWordsTests.swift; sourceTree = "<group>"; };
-		475BEB7927E587C0005CB334 /* BabbelFallingWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabbelFallingWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		475BEB7D27E587C0005CB334 /* BabbelFallingWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabbelFallingWordsUITests.swift; sourceTree = "<group>"; };
-		475BEB7F27E587C0005CB334 /* BabbelFallingWordsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabbelFallingWordsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		475BEB7627E587C0005CB334 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +62,6 @@
 			children = (
 				475BEB5B27E587BE005CB334 /* BabbelFallingWords */,
 				475BEB7227E587C0005CB334 /* BabbelFallingWordsTests */,
-				475BEB7C27E587C0005CB334 /* BabbelFallingWordsUITests */,
 				475BEB5A27E587BE005CB334 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +71,6 @@
 			children = (
 				475BEB5927E587BE005CB334 /* BabbelFallingWords.app */,
 				475BEB6F27E587C0005CB334 /* BabbelFallingWordsTests.xctest */,
-				475BEB7927E587C0005CB334 /* BabbelFallingWordsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +95,6 @@
 				475BEB7327E587C0005CB334 /* BabbelFallingWordsTests.swift */,
 			);
 			path = BabbelFallingWordsTests;
-			sourceTree = "<group>";
-		};
-		475BEB7C27E587C0005CB334 /* BabbelFallingWordsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				475BEB7D27E587C0005CB334 /* BabbelFallingWordsUITests.swift */,
-				475BEB7F27E587C0005CB334 /* BabbelFallingWordsUITestsLaunchTests.swift */,
-			);
-			path = BabbelFallingWordsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +135,6 @@
 			productReference = 475BEB6F27E587C0005CB334 /* BabbelFallingWordsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		475BEB7827E587C0005CB334 /* BabbelFallingWordsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 475BEB8927E587C0005CB334 /* Build configuration list for PBXNativeTarget "BabbelFallingWordsUITests" */;
-			buildPhases = (
-				475BEB7527E587C0005CB334 /* Sources */,
-				475BEB7627E587C0005CB334 /* Frameworks */,
-				475BEB7727E587C0005CB334 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				475BEB7B27E587C0005CB334 /* PBXTargetDependency */,
-			);
-			name = BabbelFallingWordsUITests;
-			productName = BabbelFallingWordsUITests;
-			productReference = 475BEB7927E587C0005CB334 /* BabbelFallingWordsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +149,6 @@
 						CreatedOnToolsVersion = 13.3;
 					};
 					475BEB6E27E587C0005CB334 = {
-						CreatedOnToolsVersion = 13.3;
-						TestTargetID = 475BEB5827E587BE005CB334;
-					};
-					475BEB7827E587C0005CB334 = {
 						CreatedOnToolsVersion = 13.3;
 						TestTargetID = 475BEB5827E587BE005CB334;
 					};
@@ -221,7 +169,6 @@
 			targets = (
 				475BEB5827E587BE005CB334 /* BabbelFallingWords */,
 				475BEB6E27E587C0005CB334 /* BabbelFallingWordsTests */,
-				475BEB7827E587C0005CB334 /* BabbelFallingWordsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +185,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		475BEB6D27E587C0005CB334 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		475BEB7727E587C0005CB334 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,15 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		475BEB7527E587C0005CB334 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				475BEB8027E587C0005CB334 /* BabbelFallingWordsUITestsLaunchTests.swift in Sources */,
-				475BEB7E27E587C0005CB334 /* BabbelFallingWordsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +219,6 @@
 			isa = PBXTargetDependency;
 			target = 475BEB5827E587BE005CB334 /* BabbelFallingWords */;
 			targetProxy = 475BEB7027E587C0005CB334 /* PBXContainerItemProxy */;
-		};
-		475BEB7B27E587C0005CB334 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 475BEB5827E587BE005CB334 /* BabbelFallingWords */;
-			targetProxy = 475BEB7A27E587C0005CB334 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -522,40 +448,6 @@
 			};
 			name = Release;
 		};
-		475BEB8A27E587C0005CB334 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amin.BabbelFallingWordsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BabbelFallingWords;
-			};
-			name = Debug;
-		};
-		475BEB8B27E587C0005CB334 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amin.BabbelFallingWordsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BabbelFallingWords;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,15 +474,6 @@
 			buildConfigurations = (
 				475BEB8727E587C0005CB334 /* Debug */,
 				475BEB8827E587C0005CB334 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		475BEB8927E587C0005CB334 /* Build configuration list for PBXNativeTarget "BabbelFallingWordsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				475BEB8A27E587C0005CB334 /* Debug */,
-				475BEB8B27E587C0005CB334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
