@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		475BEB5D27E587BE005CB334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB5C27E587BE005CB334 /* AppDelegate.swift */; };
+		475BEB5F27E587BE005CB334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB5E27E587BE005CB334 /* SceneDelegate.swift */; };
+		475BEB6127E587BE005CB334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB6027E587BE005CB334 /* ViewController.swift */; };
+		475BEB6427E587BE005CB334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB6227E587BE005CB334 /* Main.storyboard */; };
+		475BEB6627E587C0005CB334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB6527E587C0005CB334 /* Assets.xcassets */; };
+		475BEB6927E587C0005CB334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB6727E587C0005CB334 /* LaunchScreen.storyboard */; };
+		475BEB7427E587C0005CB334 /* BabbelFallingWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB7327E587C0005CB334 /* BabbelFallingWordsTests.swift */; };
+		475BEB7E27E587C0005CB334 /* BabbelFallingWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB7D27E587C0005CB334 /* BabbelFallingWordsUITests.swift */; };
+		475BEB8027E587C0005CB334 /* BabbelFallingWordsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB7F27E587C0005CB334 /* BabbelFallingWordsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		475BEB7027E587C0005CB334 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 475BEB5127E587BE005CB334 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 475BEB5827E587BE005CB334;
+			remoteInfo = BabbelFallingWords;
+		};
+		475BEB7A27E587C0005CB334 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 475BEB5127E587BE005CB334 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 475BEB5827E587BE005CB334;
+			remoteInfo = BabbelFallingWords;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		475BEB5927E587BE005CB334 /* BabbelFallingWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabbelFallingWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		475BEB5C27E587BE005CB334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		475BEB5E27E587BE005CB334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		475BEB6027E587BE005CB334 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		475BEB6327E587BE005CB334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		475BEB6527E587C0005CB334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		475BEB6827E587C0005CB334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		475BEB6A27E587C0005CB334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		475BEB6F27E587C0005CB334 /* BabbelFallingWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabbelFallingWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		475BEB7327E587C0005CB334 /* BabbelFallingWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabbelFallingWordsTests.swift; sourceTree = "<group>"; };
+		475BEB7927E587C0005CB334 /* BabbelFallingWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabbelFallingWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		475BEB7D27E587C0005CB334 /* BabbelFallingWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabbelFallingWordsUITests.swift; sourceTree = "<group>"; };
+		475BEB7F27E587C0005CB334 /* BabbelFallingWordsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabbelFallingWordsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		475BEB5627E587BE005CB334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		475BEB6C27E587C0005CB334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		475BEB7627E587C0005CB334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		475BEB5027E587BE005CB334 = {
+			isa = PBXGroup;
+			children = (
+				475BEB5B27E587BE005CB334 /* BabbelFallingWords */,
+				475BEB7227E587C0005CB334 /* BabbelFallingWordsTests */,
+				475BEB7C27E587C0005CB334 /* BabbelFallingWordsUITests */,
+				475BEB5A27E587BE005CB334 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		475BEB5A27E587BE005CB334 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				475BEB5927E587BE005CB334 /* BabbelFallingWords.app */,
+				475BEB6F27E587C0005CB334 /* BabbelFallingWordsTests.xctest */,
+				475BEB7927E587C0005CB334 /* BabbelFallingWordsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		475BEB5B27E587BE005CB334 /* BabbelFallingWords */ = {
+			isa = PBXGroup;
+			children = (
+				475BEB5C27E587BE005CB334 /* AppDelegate.swift */,
+				475BEB5E27E587BE005CB334 /* SceneDelegate.swift */,
+				475BEB6027E587BE005CB334 /* ViewController.swift */,
+				475BEB6227E587BE005CB334 /* Main.storyboard */,
+				475BEB6527E587C0005CB334 /* Assets.xcassets */,
+				475BEB6727E587C0005CB334 /* LaunchScreen.storyboard */,
+				475BEB6A27E587C0005CB334 /* Info.plist */,
+			);
+			path = BabbelFallingWords;
+			sourceTree = "<group>";
+		};
+		475BEB7227E587C0005CB334 /* BabbelFallingWordsTests */ = {
+			isa = PBXGroup;
+			children = (
+				475BEB7327E587C0005CB334 /* BabbelFallingWordsTests.swift */,
+			);
+			path = BabbelFallingWordsTests;
+			sourceTree = "<group>";
+		};
+		475BEB7C27E587C0005CB334 /* BabbelFallingWordsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				475BEB7D27E587C0005CB334 /* BabbelFallingWordsUITests.swift */,
+				475BEB7F27E587C0005CB334 /* BabbelFallingWordsUITestsLaunchTests.swift */,
+			);
+			path = BabbelFallingWordsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		475BEB5827E587BE005CB334 /* BabbelFallingWords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 475BEB8327E587C0005CB334 /* Build configuration list for PBXNativeTarget "BabbelFallingWords" */;
+			buildPhases = (
+				475BEB5527E587BE005CB334 /* Sources */,
+				475BEB5627E587BE005CB334 /* Frameworks */,
+				475BEB5727E587BE005CB334 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabbelFallingWords;
+			productName = BabbelFallingWords;
+			productReference = 475BEB5927E587BE005CB334 /* BabbelFallingWords.app */;
+			productType = "com.apple.product-type.application";
+		};
+		475BEB6E27E587C0005CB334 /* BabbelFallingWordsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 475BEB8627E587C0005CB334 /* Build configuration list for PBXNativeTarget "BabbelFallingWordsTests" */;
+			buildPhases = (
+				475BEB6B27E587C0005CB334 /* Sources */,
+				475BEB6C27E587C0005CB334 /* Frameworks */,
+				475BEB6D27E587C0005CB334 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				475BEB7127E587C0005CB334 /* PBXTargetDependency */,
+			);
+			name = BabbelFallingWordsTests;
+			productName = BabbelFallingWordsTests;
+			productReference = 475BEB6F27E587C0005CB334 /* BabbelFallingWordsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		475BEB7827E587C0005CB334 /* BabbelFallingWordsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 475BEB8927E587C0005CB334 /* Build configuration list for PBXNativeTarget "BabbelFallingWordsUITests" */;
+			buildPhases = (
+				475BEB7527E587C0005CB334 /* Sources */,
+				475BEB7627E587C0005CB334 /* Frameworks */,
+				475BEB7727E587C0005CB334 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				475BEB7B27E587C0005CB334 /* PBXTargetDependency */,
+			);
+			name = BabbelFallingWordsUITests;
+			productName = BabbelFallingWordsUITests;
+			productReference = 475BEB7927E587C0005CB334 /* BabbelFallingWordsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		475BEB5127E587BE005CB334 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					475BEB5827E587BE005CB334 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					475BEB6E27E587C0005CB334 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 475BEB5827E587BE005CB334;
+					};
+					475BEB7827E587C0005CB334 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 475BEB5827E587BE005CB334;
+					};
+				};
+			};
+			buildConfigurationList = 475BEB5427E587BE005CB334 /* Build configuration list for PBXProject "BabbelFallingWords" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 475BEB5027E587BE005CB334;
+			productRefGroup = 475BEB5A27E587BE005CB334 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				475BEB5827E587BE005CB334 /* BabbelFallingWords */,
+				475BEB6E27E587C0005CB334 /* BabbelFallingWordsTests */,
+				475BEB7827E587C0005CB334 /* BabbelFallingWordsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		475BEB5727E587BE005CB334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475BEB6927E587C0005CB334 /* LaunchScreen.storyboard in Resources */,
+				475BEB6627E587C0005CB334 /* Assets.xcassets in Resources */,
+				475BEB6427E587BE005CB334 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		475BEB6D27E587C0005CB334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		475BEB7727E587C0005CB334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		475BEB5527E587BE005CB334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475BEB6127E587BE005CB334 /* ViewController.swift in Sources */,
+				475BEB5D27E587BE005CB334 /* AppDelegate.swift in Sources */,
+				475BEB5F27E587BE005CB334 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		475BEB6B27E587C0005CB334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475BEB7427E587C0005CB334 /* BabbelFallingWordsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		475BEB7527E587C0005CB334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475BEB8027E587C0005CB334 /* BabbelFallingWordsUITestsLaunchTests.swift in Sources */,
+				475BEB7E27E587C0005CB334 /* BabbelFallingWordsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		475BEB7127E587C0005CB334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 475BEB5827E587BE005CB334 /* BabbelFallingWords */;
+			targetProxy = 475BEB7027E587C0005CB334 /* PBXContainerItemProxy */;
+		};
+		475BEB7B27E587C0005CB334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 475BEB5827E587BE005CB334 /* BabbelFallingWords */;
+			targetProxy = 475BEB7A27E587C0005CB334 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		475BEB6227E587BE005CB334 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				475BEB6327E587BE005CB334 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		475BEB6727E587C0005CB334 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				475BEB6827E587C0005CB334 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		475BEB8127E587C0005CB334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		475BEB8227E587C0005CB334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		475BEB8427E587C0005CB334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BabbelFallingWords/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amin.BabbelFallingWords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		475BEB8527E587C0005CB334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BabbelFallingWords/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amin.BabbelFallingWords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		475BEB8727E587C0005CB334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amin.BabbelFallingWordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabbelFallingWords.app/BabbelFallingWords";
+			};
+			name = Debug;
+		};
+		475BEB8827E587C0005CB334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amin.BabbelFallingWordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabbelFallingWords.app/BabbelFallingWords";
+			};
+			name = Release;
+		};
+		475BEB8A27E587C0005CB334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amin.BabbelFallingWordsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BabbelFallingWords;
+			};
+			name = Debug;
+		};
+		475BEB8B27E587C0005CB334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amin.BabbelFallingWordsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BabbelFallingWords;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		475BEB5427E587BE005CB334 /* Build configuration list for PBXProject "BabbelFallingWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				475BEB8127E587C0005CB334 /* Debug */,
+				475BEB8227E587C0005CB334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		475BEB8327E587C0005CB334 /* Build configuration list for PBXNativeTarget "BabbelFallingWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				475BEB8427E587C0005CB334 /* Debug */,
+				475BEB8527E587C0005CB334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		475BEB8627E587C0005CB334 /* Build configuration list for PBXNativeTarget "BabbelFallingWordsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				475BEB8727E587C0005CB334 /* Debug */,
+				475BEB8827E587C0005CB334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		475BEB8927E587C0005CB334 /* Build configuration list for PBXNativeTarget "BabbelFallingWordsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				475BEB8A27E587C0005CB334 /* Debug */,
+				475BEB8B27E587C0005CB334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 475BEB5127E587BE005CB334 /* Project object */;
+}
