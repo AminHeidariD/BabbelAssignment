@@ -65,7 +65,7 @@ private extension GameViewController {
     func bindViewModel() {
         viewModel.questionSubject
             .receive(on: DispatchQueue.main, options: nil)
-            .sink(receiveValue: question)
+            .sink(receiveValue: onReceivedQuestion)
             .store(in: &cancellables)
         //
         //
@@ -89,7 +89,7 @@ private extension GameViewController {
         
     }
     
-    func question(_ wordViewModel: WordViewModel) {
+    func onReceivedQuestion(_ wordViewModel: WordViewModel) {
         questionNumberLabel.text = wordViewModel.questionNumberTitle
         wordLabel.text = wordViewModel.wordTitle
         translatedWordLabel.text = wordViewModel.translatedWordTitle
