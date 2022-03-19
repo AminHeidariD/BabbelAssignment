@@ -88,10 +88,7 @@
 		4723085527E598B20054C520 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				4723085D27E59A250054C520 /* Models */,
-				4723085C27E59A1F0054C520 /* ViewModels */,
-				4723085927E598C80054C520 /* Views */,
-				4723085627E598B70054C520 /* Controllers */,
+				4723087127E5C5E50054C520 /* Game */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -140,6 +137,17 @@
 				4723086F27E5B0220054C520 /* ArrayExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4723087127E5C5E50054C520 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				4723085D27E59A250054C520 /* Models */,
+				4723085C27E59A1F0054C520 /* ViewModels */,
+				4723085927E598C80054C520 /* Views */,
+				4723085627E598B70054C520 /* Controllers */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 		475BEB5027E587BE005CB334 = {
