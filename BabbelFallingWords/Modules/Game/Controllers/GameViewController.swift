@@ -90,8 +90,6 @@ private extension GameViewController {
     }
     
     func question(_ wordViewModel: WordViewModel) {
-        // TODO: Hanle errors
-        print("Question poped: \(wordViewModel)")
         questionNumberLabel.text = wordViewModel.questionNumberTitle
         wordLabel.text = wordViewModel.wordTitle
         translatedWordLabel.text = wordViewModel.translatedWordTitle
@@ -102,7 +100,6 @@ private extension GameViewController {
         correctCountLabel.text = "\(userScore.correctAnswers)"
         wrongCountLabel.text = "\(userScore.wrongAnswers)"
         notAnsweredCountLabel.text = "\(userScore.notAnswered)"
-        //print("User score: \(userScore)")
     }
     
     func handleError(_ error: Error?) {
@@ -111,21 +108,27 @@ private extension GameViewController {
     }
     
     func handleLoading(_ isLoading: Bool) {
-        // TODO: Hanle show and hide loading
-        //print("isLoading: \(isLoading)")
+        // TODO: Hanle show and hide loading and also enable and disable action buttons
     }
     
     func handleGameFinished() {
-        wordLabel.text = nil
-        translatedWordLabel.text = nil
+        clearWordLabels()
+        removeBindings()
+        showAlert("Congratulations, you completed a great game!!!")
+    }
+    
+    func removeBindings() {
         viewModel.cancellables.removeAll()
         cancellables.removeAll()
-        self.dismiss(animated: true)
-        print("You finished the game")
+    }
+    
+    func clearWordLabels() {
+        wordLabel.text = nil
+        translatedWordLabel.text = nil
     }
 }
 
-// MARK: Animation methods
+// MARK: UI methods
 extension GameViewController {
     func animateTranslatedWord() {
         translatedWordLabel.layer.removeAllAnimations()
@@ -142,5 +145,14 @@ extension GameViewController {
             self?.viewModel.answerActionSubject.send(.notAnswered)
         }
         translatedWordAnimator?.startAnimation()
+    }
+    
+    func showAlert(_ message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default) { [weak self] _ in
+            self?.dismiss(animated: true)
+        }
+        alert.addAction(action)
+         present(alert, animated: true)
     }
 }

@@ -26,7 +26,7 @@ class GameMenuViewModel: GameMenuViewModelProtocol {
     }
     
     var thirdModeValue: Int {
-        return 11
+        return 20
     }
     
     var firstModeTitle: String {
