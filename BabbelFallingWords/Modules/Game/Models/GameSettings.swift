@@ -22,7 +22,7 @@ class GameSettings: GameSettingsProtocol {
         questionCount = min(questionCount, n)
     }
     
-    init (questionCount: Int, timeOutDuration: TimeInterval) {
+    init (questionCount: Int, timeOutDuration: TimeInterval = 0) {
         self.questionCount = questionCount
         self.timeOutDuration = timeOutDuration
     }
