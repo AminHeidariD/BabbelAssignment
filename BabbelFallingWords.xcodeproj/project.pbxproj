@@ -18,6 +18,10 @@
 		4723086B27E59C5E0054C520 /* GameErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723086A27E59C5E0054C520 /* GameErrors.swift */; };
 		4723086E27E5A2BB0054C520 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723086D27E5A2BB0054C520 /* IntExtension.swift */; };
 		4723087027E5B0220054C520 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723086F27E5B0220054C520 /* ArrayExtension.swift */; };
+		4723087B27E5C7370054C520 /* GameMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4723087A27E5C7370054C520 /* GameMenu.storyboard */; };
+		4723087D27E5C7420054C520 /* GameMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723087C27E5C7420054C520 /* GameMenuController.swift */; };
+		4723087F27E5C74F0054C520 /* GameMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723087E27E5C74F0054C520 /* GameMenuViewModel.swift */; };
+		4723088127E5C9530054C520 /* GameMenuViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723088027E5C9530054C520 /* GameMenuViewModelProtocol.swift */; };
 		475BEB5D27E587BE005CB334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB5C27E587BE005CB334 /* AppDelegate.swift */; };
 		475BEB5F27E587BE005CB334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB5E27E587BE005CB334 /* SceneDelegate.swift */; };
 		475BEB6627E587C0005CB334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB6527E587C0005CB334 /* Assets.xcassets */; };
@@ -52,6 +56,10 @@
 		4723086A27E59C5E0054C520 /* GameErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameErrors.swift; sourceTree = "<group>"; };
 		4723086D27E5A2BB0054C520 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		4723086F27E5B0220054C520 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		4723087A27E5C7370054C520 /* GameMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameMenu.storyboard; sourceTree = "<group>"; };
+		4723087C27E5C7420054C520 /* GameMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenuController.swift; sourceTree = "<group>"; };
+		4723087E27E5C74F0054C520 /* GameMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenuViewModel.swift; sourceTree = "<group>"; };
+		4723088027E5C9530054C520 /* GameMenuViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenuViewModelProtocol.swift; sourceTree = "<group>"; };
 		475BEB5927E587BE005CB334 /* BabbelFallingWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabbelFallingWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		475BEB5C27E587BE005CB334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		475BEB5E27E587BE005CB334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +96,7 @@
 		4723085527E598B20054C520 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4723087627E5C7110054C520 /* GameMenu */,
 				4723087127E5C5E50054C520 /* Game */,
 			);
 			path = Modules;
@@ -148,6 +157,41 @@
 				4723085627E598B70054C520 /* Controllers */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		4723087627E5C7110054C520 /* GameMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4723087727E5C7150054C520 /* ViewModels */,
+				4723087927E5C7210054C520 /* Controllers */,
+				4723087827E5C71E0054C520 /* Views */,
+			);
+			path = GameMenu;
+			sourceTree = "<group>";
+		};
+		4723087727E5C7150054C520 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4723087E27E5C74F0054C520 /* GameMenuViewModel.swift */,
+				4723088027E5C9530054C520 /* GameMenuViewModelProtocol.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4723087827E5C71E0054C520 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4723087A27E5C7370054C520 /* GameMenu.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4723087927E5C7210054C520 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4723087C27E5C7420054C520 /* GameMenuController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		475BEB5027E587BE005CB334 = {
@@ -320,6 +364,7 @@
 				475BEB9927E58BAE005CB334 /* words.json in Resources */,
 				475BEB6627E587C0005CB334 /* Assets.xcassets in Resources */,
 				4723085B27E598D60054C520 /* Game.storyboard in Resources */,
+				4723087B27E5C7370054C520 /* GameMenu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +389,7 @@
 				4723086727E59AF10054C520 /* UserScore.swift in Sources */,
 				475BEB9227E589DE005CB334 /* DataServiceProtocol.swift in Sources */,
 				475BEB5D27E587BE005CB334 /* AppDelegate.swift in Sources */,
+				4723087D27E5C7420054C520 /* GameMenuController.swift in Sources */,
 				475BEB9427E58A0A005CB334 /* JsonFileDataService.swift in Sources */,
 				4723086327E59A910054C520 /* GameViewModelProtocol.swift in Sources */,
 				4723085827E598C40054C520 /* GameViewController.swift in Sources */,
@@ -352,7 +398,9 @@
 				4723086927E59B800054C520 /* GameSettings.swift in Sources */,
 				4723085F27E59A5B0054C520 /* GameViewModel.swift in Sources */,
 				4723086127E59A690054C520 /* WordViewModel.swift in Sources */,
+				4723088127E5C9530054C520 /* GameMenuViewModelProtocol.swift in Sources */,
 				4723086527E59AA60054C520 /* AnswerAction.swift in Sources */,
+				4723087F27E5C74F0054C520 /* GameMenuViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +559,7 @@
 				INFOPLIST_FILE = BabbelFallingWords/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Game;
+				INFOPLIST_KEY_UIMainStoryboardFile = GameMenu;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -539,7 +587,7 @@
 				INFOPLIST_FILE = BabbelFallingWords/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Game;
+				INFOPLIST_KEY_UIMainStoryboardFile = GameMenu;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

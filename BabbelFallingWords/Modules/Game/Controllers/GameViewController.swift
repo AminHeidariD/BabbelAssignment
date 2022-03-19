@@ -10,6 +10,9 @@ import Combine
 
 class GameViewController: UIViewController {
     
+    // MARK: Constants
+    static let identifier = "GameViewController"
+    
     // MARK: Outlets
     @IBOutlet private weak var correctCountLabel: UILabel!
     @IBOutlet private weak var wrongCountLabel: UILabel!
@@ -20,10 +23,23 @@ class GameViewController: UIViewController {
     @IBOutlet private weak var translatedWordLabel: UILabel!
     @IBOutlet private weak var translatedWordContainerView: UIView!
     // MARK: Properties
-    private let viewModel: GameViewModelProtocol = GameViewModel(dataService: JsonFileDataService(), gameSettings: GameSettings(questionCount: 5, timeOutDuration: 5))
+    private let viewModel: GameViewModel
     private var cancellables = Set<AnyCancellable>()
     private var translatedWordAnimator: UIViewPropertyAnimator?
     
+    // MARK: Init
+    init?(coder: NSCoder, setting: GameSettingsProtocol) {
+        viewModel = GameViewModel(dataService: JsonFileDataService(), gameSettings: setting)
+        super.init(coder: coder)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("You must create this view controller with a url.")
+    }
+}
+
+// MARK: Controller Lifecycle
+extension GameViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
@@ -102,6 +118,9 @@ private extension GameViewController {
     func handleGameFinished() {
         wordLabel.text = nil
         translatedWordLabel.text = nil
+        viewModel.cancellables.removeAll()
+        cancellables.removeAll()
+        self.dismiss(animated: true)
         print("You finished the game")
     }
 }

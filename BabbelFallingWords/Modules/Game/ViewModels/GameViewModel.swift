@@ -15,9 +15,9 @@ class GameViewModel: GameViewModelProtocol {
     private let gameSettings: GameSettingsProtocol
     
     // MARK: Properties
+    var cancellables = Set<AnyCancellable>()
     private var questionsDatasource: [WordViewModel]?
     private var currentQuestion: WordViewModel?
-    private var cancellables = Set<AnyCancellable>()
     private var isGameFinished: Bool {
         return questionsDatasource?.isEmpty ?? true
     }

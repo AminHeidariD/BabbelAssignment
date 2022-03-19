@@ -12,7 +12,7 @@
         <!--Game View Controller-->
         <scene sceneID="Bbs-Ak-DBe">
             <objects>
-                <viewController id="ZS9-qG-Hd1" customClass="GameViewController" customModule="BabbelFallingWords" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="ZS9-qG-Hd1" customClass="GameViewController" customModule="BabbelFallingWords" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O22-PX-5LG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
