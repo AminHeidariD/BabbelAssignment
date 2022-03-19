@@ -15,11 +15,15 @@ struct WordModel: Decodable {
         self.originalText = originalText
         self.translatedText = translatedText
     }
+    
     enum CodingKeys: String, CodingKey {
         case originalText = "text_eng"
         case translatedText = "text_spa"
     }
-    
+}
+
+// MARK: Equatable
+extension WordModel: Equatable {
     static func == (lhs: WordModel, rhs: WordModel) -> Bool {
         return lhs.originalText == rhs.originalText && lhs.translatedText == rhs.translatedText
     }

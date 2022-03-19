@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4723085827E598C40054C520 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723085727E598C40054C520 /* GameViewController.swift */; };
+		4723085B27E598D60054C520 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4723085A27E598D60054C520 /* Game.storyboard */; };
+		4723085F27E59A5B0054C520 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723085E27E59A5B0054C520 /* GameViewModel.swift */; };
+		4723086127E59A690054C520 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723086027E59A690054C520 /* WordViewModel.swift */; };
+		4723086327E59A910054C520 /* GameViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723086227E59A910054C520 /* GameViewModelProtocol.swift */; };
+		4723086527E59AA60054C520 /* AnswerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723086427E59AA60054C520 /* AnswerAction.swift */; };
+		4723086727E59AF10054C520 /* UserScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723086627E59AF10054C520 /* UserScore.swift */; };
+		4723086927E59B800054C520 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723086827E59B800054C520 /* GameSettings.swift */; };
+		4723086B27E59C5E0054C520 /* GameErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723086A27E59C5E0054C520 /* GameErrors.swift */; };
+		4723086E27E5A2BB0054C520 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723086D27E5A2BB0054C520 /* IntExtension.swift */; };
+		4723087027E5B0220054C520 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4723086F27E5B0220054C520 /* ArrayExtension.swift */; };
 		475BEB5D27E587BE005CB334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB5C27E587BE005CB334 /* AppDelegate.swift */; };
 		475BEB5F27E587BE005CB334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB5E27E587BE005CB334 /* SceneDelegate.swift */; };
-		475BEB6127E587BE005CB334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB6027E587BE005CB334 /* ViewController.swift */; };
-		475BEB6427E587BE005CB334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB6227E587BE005CB334 /* Main.storyboard */; };
 		475BEB6627E587C0005CB334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB6527E587C0005CB334 /* Assets.xcassets */; };
 		475BEB6927E587C0005CB334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB6727E587C0005CB334 /* LaunchScreen.storyboard */; };
 		475BEB7427E587C0005CB334 /* BabbelFallingWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB7327E587C0005CB334 /* BabbelFallingWordsTests.swift */; };
@@ -32,11 +41,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4723085727E598C40054C520 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		4723085A27E598D60054C520 /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		4723085E27E59A5B0054C520 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		4723086027E59A690054C520 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
+		4723086227E59A910054C520 /* GameViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelProtocol.swift; sourceTree = "<group>"; };
+		4723086427E59AA60054C520 /* AnswerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerAction.swift; sourceTree = "<group>"; };
+		4723086627E59AF10054C520 /* UserScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScore.swift; sourceTree = "<group>"; };
+		4723086827E59B800054C520 /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		4723086A27E59C5E0054C520 /* GameErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameErrors.swift; sourceTree = "<group>"; };
+		4723086D27E5A2BB0054C520 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		4723086F27E5B0220054C520 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		475BEB5927E587BE005CB334 /* BabbelFallingWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabbelFallingWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		475BEB5C27E587BE005CB334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		475BEB5E27E587BE005CB334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		475BEB6027E587BE005CB334 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		475BEB6327E587BE005CB334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		475BEB6527E587C0005CB334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		475BEB6827E587C0005CB334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		475BEB6A27E587C0005CB334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +85,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4723085527E598B20054C520 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4723085D27E59A250054C520 /* Models */,
+				4723085C27E59A1F0054C520 /* ViewModels */,
+				4723085927E598C80054C520 /* Views */,
+				4723085627E598B70054C520 /* Controllers */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4723085627E598B70054C520 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4723085727E598C40054C520 /* GameViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4723085927E598C80054C520 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4723085A27E598D60054C520 /* Game.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4723085C27E59A1F0054C520 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4723086227E59A910054C520 /* GameViewModelProtocol.swift */,
+				4723085E27E59A5B0054C520 /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4723085D27E59A250054C520 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4723086027E59A690054C520 /* WordViewModel.swift */,
+				4723086627E59AF10054C520 /* UserScore.swift */,
+				4723086427E59AA60054C520 /* AnswerAction.swift */,
+				4723086827E59B800054C520 /* GameSettings.swift */,
+				4723086A27E59C5E0054C520 /* GameErrors.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4723086C27E5A2AC0054C520 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4723086D27E5A2BB0054C520 /* IntExtension.swift */,
+				4723086F27E5B0220054C520 /* ArrayExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		475BEB5027E587BE005CB334 = {
 			isa = PBXGroup;
 			children = (
@@ -88,13 +163,11 @@
 		475BEB5B27E587BE005CB334 /* BabbelFallingWords */ = {
 			isa = PBXGroup;
 			children = (
-				475BEB9727E58B8F005CB334 /* Resources */,
 				475BEB8E27E58927005CB334 /* Common */,
-				475BEB8C27E588FA005CB334 /* Modules */,
+				4723085527E598B20054C520 /* Modules */,
+				475BEB9727E58B8F005CB334 /* Resources */,
 				475BEB5C27E587BE005CB334 /* AppDelegate.swift */,
 				475BEB5E27E587BE005CB334 /* SceneDelegate.swift */,
-				475BEB6027E587BE005CB334 /* ViewController.swift */,
-				475BEB6227E587BE005CB334 /* Main.storyboard */,
 				475BEB6527E587C0005CB334 /* Assets.xcassets */,
 				475BEB6727E587C0005CB334 /* LaunchScreen.storyboard */,
 				475BEB6A27E587C0005CB334 /* Info.plist */,
@@ -111,24 +184,10 @@
 			path = BabbelFallingWordsTests;
 			sourceTree = "<group>";
 		};
-		475BEB8C27E588FA005CB334 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				475BEB8D27E58900005CB334 /* Game */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		475BEB8D27E58900005CB334 /* Game */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Game;
-			sourceTree = "<group>";
-		};
 		475BEB8E27E58927005CB334 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4723086C27E5A2AC0054C520 /* Extensions */,
 				475BEB9027E5897B005CB334 /* DataService */,
 				475BEB8F27E58977005CB334 /* Models */,
 			);
@@ -252,7 +311,7 @@
 				475BEB6927E587C0005CB334 /* LaunchScreen.storyboard in Resources */,
 				475BEB9927E58BAE005CB334 /* words.json in Resources */,
 				475BEB6627E587C0005CB334 /* Assets.xcassets in Resources */,
-				475BEB6427E587BE005CB334 /* Main.storyboard in Resources */,
+				4723085B27E598D60054C520 /* Game.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,12 +330,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				475BEB6127E587BE005CB334 /* ViewController.swift in Sources */,
+				4723087027E5B0220054C520 /* ArrayExtension.swift in Sources */,
 				475BEB9627E58A25005CB334 /* WordModel.swift in Sources */,
+				4723086B27E59C5E0054C520 /* GameErrors.swift in Sources */,
+				4723086727E59AF10054C520 /* UserScore.swift in Sources */,
 				475BEB9227E589DE005CB334 /* DataServiceProtocol.swift in Sources */,
 				475BEB5D27E587BE005CB334 /* AppDelegate.swift in Sources */,
 				475BEB9427E58A0A005CB334 /* JsonFileDataService.swift in Sources */,
+				4723086327E59A910054C520 /* GameViewModelProtocol.swift in Sources */,
+				4723085827E598C40054C520 /* GameViewController.swift in Sources */,
 				475BEB5F27E587BE005CB334 /* SceneDelegate.swift in Sources */,
+				4723086E27E5A2BB0054C520 /* IntExtension.swift in Sources */,
+				4723086927E59B800054C520 /* GameSettings.swift in Sources */,
+				4723085F27E59A5B0054C520 /* GameViewModel.swift in Sources */,
+				4723086127E59A690054C520 /* WordViewModel.swift in Sources */,
+				4723086527E59AA60054C520 /* AnswerAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +367,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		475BEB6227E587BE005CB334 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				475BEB6327E587BE005CB334 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		475BEB6727E587C0005CB334 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,9 +503,10 @@
 				INFOPLIST_FILE = BabbelFallingWords/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Game;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +516,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,9 +531,10 @@
 				INFOPLIST_FILE = BabbelFallingWords/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Game;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +544,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
