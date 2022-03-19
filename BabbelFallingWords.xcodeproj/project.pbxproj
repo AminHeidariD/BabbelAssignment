@@ -14,6 +14,11 @@
 		475BEB6627E587C0005CB334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB6527E587C0005CB334 /* Assets.xcassets */; };
 		475BEB6927E587C0005CB334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB6727E587C0005CB334 /* LaunchScreen.storyboard */; };
 		475BEB7427E587C0005CB334 /* BabbelFallingWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB7327E587C0005CB334 /* BabbelFallingWordsTests.swift */; };
+		475BEB9227E589DE005CB334 /* DataServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB9127E589DE005CB334 /* DataServiceProtocol.swift */; };
+		475BEB9427E58A0A005CB334 /* JsonFileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB9327E58A0A005CB334 /* JsonFileDataService.swift */; };
+		475BEB9627E58A25005CB334 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BEB9527E58A25005CB334 /* WordModel.swift */; };
+		475BEB9927E58BAE005CB334 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB9827E58BAE005CB334 /* words.json */; };
+		475BEB9C27E58CCB005CB334 /* testWords.json in Resources */ = {isa = PBXBuildFile; fileRef = 475BEB9B27E58CCB005CB334 /* testWords.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,11 @@
 		475BEB6A27E587C0005CB334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		475BEB6F27E587C0005CB334 /* BabbelFallingWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabbelFallingWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		475BEB7327E587C0005CB334 /* BabbelFallingWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabbelFallingWordsTests.swift; sourceTree = "<group>"; };
+		475BEB9127E589DE005CB334 /* DataServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceProtocol.swift; sourceTree = "<group>"; };
+		475BEB9327E58A0A005CB334 /* JsonFileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFileDataService.swift; sourceTree = "<group>"; };
+		475BEB9527E58A25005CB334 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		475BEB9827E58BAE005CB334 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		475BEB9B27E58CCB005CB334 /* testWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testWords.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,9 @@
 		475BEB5B27E587BE005CB334 /* BabbelFallingWords */ = {
 			isa = PBXGroup;
 			children = (
+				475BEB9727E58B8F005CB334 /* Resources */,
+				475BEB8E27E58927005CB334 /* Common */,
+				475BEB8C27E588FA005CB334 /* Modules */,
 				475BEB5C27E587BE005CB334 /* AppDelegate.swift */,
 				475BEB5E27E587BE005CB334 /* SceneDelegate.swift */,
 				475BEB6027E587BE005CB334 /* ViewController.swift */,
@@ -92,9 +105,67 @@
 		475BEB7227E587C0005CB334 /* BabbelFallingWordsTests */ = {
 			isa = PBXGroup;
 			children = (
+				475BEB9A27E58CAA005CB334 /* DataServiceTest */,
 				475BEB7327E587C0005CB334 /* BabbelFallingWordsTests.swift */,
 			);
 			path = BabbelFallingWordsTests;
+			sourceTree = "<group>";
+		};
+		475BEB8C27E588FA005CB334 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				475BEB8D27E58900005CB334 /* Game */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		475BEB8D27E58900005CB334 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		475BEB8E27E58927005CB334 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				475BEB9027E5897B005CB334 /* DataService */,
+				475BEB8F27E58977005CB334 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		475BEB8F27E58977005CB334 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				475BEB9527E58A25005CB334 /* WordModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		475BEB9027E5897B005CB334 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				475BEB9127E589DE005CB334 /* DataServiceProtocol.swift */,
+				475BEB9327E58A0A005CB334 /* JsonFileDataService.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		475BEB9727E58B8F005CB334 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				475BEB9827E58BAE005CB334 /* words.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		475BEB9A27E58CAA005CB334 /* DataServiceTest */ = {
+			isa = PBXGroup;
+			children = (
+				475BEB9B27E58CCB005CB334 /* testWords.json */,
+			);
+			path = DataServiceTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				475BEB6927E587C0005CB334 /* LaunchScreen.storyboard in Resources */,
+				475BEB9927E58BAE005CB334 /* words.json in Resources */,
 				475BEB6627E587C0005CB334 /* Assets.xcassets in Resources */,
 				475BEB6427E587BE005CB334 /* Main.storyboard in Resources */,
 			);
@@ -188,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475BEB9C27E58CCB005CB334 /* testWords.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				475BEB6127E587BE005CB334 /* ViewController.swift in Sources */,
+				475BEB9627E58A25005CB334 /* WordModel.swift in Sources */,
+				475BEB9227E589DE005CB334 /* DataServiceProtocol.swift in Sources */,
 				475BEB5D27E587BE005CB334 /* AppDelegate.swift in Sources */,
+				475BEB9427E58A0A005CB334 /* JsonFileDataService.swift in Sources */,
 				475BEB5F27E587BE005CB334 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
